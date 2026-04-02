@@ -22,3 +22,4 @@ jobs:
 
       - name: Skip SonarQube
         run: echo "SonarQube skipped in CI (local server)"
+- run: npm install
