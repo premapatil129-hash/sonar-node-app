@@ -16,7 +16,9 @@ jobs:
         with:
           node-version: '18'
 
-      - run: npm install
+      - name: Install dependencies
+        working-directory: ./app
+        run: npm install
 
-      - name: Skip SonarQube (local server not accessible)
+      - name: Skip SonarQube
         run: echo "SonarQube skipped in CI (local server)"
