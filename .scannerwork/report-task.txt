@@ -1,0 +1,6 @@
+projectKey=sonar-node-app
+serverUrl=http://localhost:9000
+serverVersion=26.3.0.120487
+dashboardUrl=http://localhost:9000/dashboard?id=sonar-node-app
+ceTaskId=b9ad33f6-a238-4ee3-9848-0a8e13b85215
+ceTaskUrl=http://localhost:9000/api/ce/task?id=b9ad33f6-a238-4ee3-9848-0a8e13b85215
