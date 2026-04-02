@@ -10,19 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       - run: npm install
 
-      - uses: SonarSource/sonarqube-scan-action@v1.2.0
+      - uses: SonarSource/sonarqube-scan-action@v2
         with:
           args: >
             -Dsonar.projectKey=sonar-node-app
             -Dsonar.sources=.
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: http://YOUR_IP:9000
